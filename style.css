@@ -1,0 +1,120 @@
+:root
+{
+    --white: #f0f0f0;
+    --red: #be3144;
+    --blue: #45567d;
+    --gray: #303841;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+header
+{
+    width: 100%;
+    background-color: var(--red);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    border-bottom: 2px solid #00000099;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+ul
+{
+    list-style: none;
+    display: flex;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+ul a
+{
+    text-decoration: none;
+    color:var(--white);
+    padding: 22px 20px;
+    display: block;
+    transition: all 150ms ease-in-out;
+}
+
+ul a:hover
+{
+    background-color: var(--blue);
+}
+
+main
+{
+    width: 100%;
+}
+
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1
+{
+    font-family:Raleway;
+    font-size: 60px;
+    color: var(--white);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 3s steps(38) both,
+    blink 1s step-end 2 ;
+    max-width: fit-content;
+
+}
+
+.hero p
+{
+    font-family:Poppins;
+    font-size: 30px;
+    color: var(--red);
+    font-style: italic;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 3s steps(35) 1600ms both,
+    blink 1s step-end 1600ms infinite ;
+    max-width: fit-content;
+    width:0px;
+}
+
+@keyframes type {
+    from { width: 0 }
+    to { width: 100%;
+        white-space:normal }
+}
+
+@keyframes blink {
+    0%,100%
+    {
+        border-right: 2px solid var(--red);
+    }
+    50%{
+        border-color: transparent;
+    }
+}
