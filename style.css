@@ -1,7 +1,7 @@
 :root
 {
     --white: #f0f0f0;
-    --red: #be3144;
+    --green: #00fa9a;
     --blue: #45567d;
     --gray: #303841;
 }
@@ -24,7 +24,7 @@ body
 header
 {
     width: 100%;
-    background-color: var(--red);
+    background-color: var(--green);
     display: flex;
     justify-content: flex-end;
     padding-right: 20px;
@@ -92,7 +92,7 @@ main
 {
     font-family:Poppins;
     font-size: 30px;
-    color: var(--red);
+    color: var(--green);
     font-style: italic;
     text-align: center;
     white-space: nowrap;
@@ -112,9 +112,68 @@ main
 @keyframes blink {
     0%,100%
     {
-        border-right: 2px solid var(--red);
+        border-right: 2px solid var(--green);
     }
     50%{
         border-color: transparent;
     }
+}
+
+/**********contact reseaux***********/
+
+#contact/rs
+{
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+}
+
+#contact/rs h1
+{
+    font-family:Raleway;
+    font-size: 60px;
+    color: var(--white);
+}
+
+#contact/rs p
+{
+    font-family:Poppins;
+    color: var(--white);
+    font-style: italic;
+    margin-top: 7px;
+    font-size: 19px;
+}
+
+#contact/rs #links
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+#contact/rs #links a
+{
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
+    font-family: Poppins;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all 0.2s linear;
+}
+
+#contact/rs #links a:hover
+{
+    transform: translateY(10px);
+}
+
+#contact/rs #links a i
+{
+    margin-right:5px ;
 }
