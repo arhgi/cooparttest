@@ -121,7 +121,7 @@ main
 
 /**********contact reseaux***********/
 
-#contact/rs
+#contactrs
 {
     background-color: var(--gray);
     display: flex;
@@ -132,14 +132,14 @@ main
     text-align: center;
 }
 
-#contact/rs h1
+#contactrs h1
 {
     font-family:Raleway;
     font-size: 60px;
     color: var(--white);
 }
 
-#contact/rs p
+#contactrs p
 {
     font-family:Poppins;
     color: var(--white);
@@ -148,7 +148,7 @@ main
     font-size: 19px;
 }
 
-#contact/rs #links
+#contactrs #links
 {
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +156,7 @@ main
     justify-content: center;
 }
 
-#contact/rs #links a
+#contactrs #links a
 {
     text-decoration: none;
     color: var(--white);
@@ -168,12 +168,12 @@ main
     transition: all 0.2s linear;
 }
 
-#contact/rs #links a:hover
+#contactrs #links a:hover
 {
     transform: translateY(10px);
 }
 
-#contact/rs #links a i
+#contactrs #links a i
 {
     margin-right:5px ;
 }
